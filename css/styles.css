@@ -75,14 +75,15 @@ body {
 
 .nav-list {
   display: flex;
-  gap: 40px;
+  gap: 1px;
   list-style: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 2%;
-  flex-grow: 2;
+  flex-grow: 9;
 }
+
 
 .list-item {
   padding: 24px 0;
@@ -90,9 +91,26 @@ body {
 }
 
 .nav-link {
+  position: relative;
   text-decoration: none;
   color: #2e2f42;
   padding: 24px 0;
+}
+
+.nav-link::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 0;
+  height: 4px;
+  background-color: #404BBF;
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.nav-link:hover::after{
+  width: 100%;
 }
 
 .nav-link:hover {
@@ -135,6 +153,10 @@ body {
   list-style: none;
   text-align: center;
   display: flex;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg); 
+  background-size: cover;
+  background-position: center;
+  
 }
 
 .section-one-header {
