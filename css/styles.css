@@ -323,6 +323,30 @@ body {
   row-gap: 48px;
 }
 
+.image-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  background-color: #4d5ae5;
+  color: #f4f4fd;
+  font-family: Roboto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+  padding-left: 32px;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-four-list-item:hover .overlay {
+  transform: translateY(0);
+}
+
 .section-four-container {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -423,4 +447,84 @@ body {
   display: flex;
   list-style-type: none;
   gap: 120px;
+}
+
+#insta-icon {
+  --color1: #4d5ae5;
+  --color2: #f4f4fd;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#insta-icon:hover {
+  --color1: #404bbf;
+}
+
+#twitter-icon {
+  --color1: var(--color1);
+  --color2: var(--color2);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#twitter-icon:hover {
+  --color1: #404bbf;
+}
+
+#face-icon {
+  --color1: var(--color1);
+  --color2: var(--color2);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#face-icon:hover {
+  --color1: #404bbf;
+}
+
+#linked-icon {
+  --color1: var(--color1);
+  --color2: var(--color2);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#linked-icon:hover {
+  --color1: #404bbf;
+}
+
+#footer-insta {
+  --color1: #4d5ae5;
+  --color2: #f4f4fd;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#footer-insta:hover {
+  --color1: #31d0aa;
+}
+
+#footer-twitter {
+  --color1: var(--color1);
+  --color2: var(--color2);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#footer-twitter:hover {
+  --color1: #31d0aa;
+}
+
+#footer-face {
+  --color1: var(--color1);
+  --color2: var(--color2);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#footer-face:hover {
+  --color1: #31d0aa;
+}
+
+#footer-linkedin {
+  --color1: var(--color1);
+  --color2: var(--color2);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#footer-linkedin:hover {
+  --color1: #31d0aa;
 }
