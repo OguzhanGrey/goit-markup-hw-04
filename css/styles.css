@@ -354,6 +354,10 @@ body {
   margin-bottom: 8px;
 }
 
+.section-four-container:hover{
+box-shadow: 0 2px 6px rgba(46, 47, 66, 0.16);
+}
+
 .section-four-items-header {
   color: #2e2f42;
   font-weight: 500;
