@@ -149,6 +149,8 @@ body {
 }
 
 .section-one {
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 188px 0;
   background-color: #2e2f42;
   height: 600px;
@@ -358,9 +360,9 @@ body {
   margin-bottom: 8px;
 }
 
-.section-four-container:hover{
-box-shadow: 0 2px 6px rgba(46, 47, 66, 0.16);
-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.section-four-container:hover {
+  box-shadow: 0 2px 6px rgba(46, 47, 66, 0.16);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-four-items-header {
